@@ -12,8 +12,12 @@ class AyahNumberWidget extends StatelessWidget {
       children: [
         SvgPicture.asset('assets/images/ayahNumber.svg'),
         PositionedDirectional(
-          start: 12.w,
-          top: 14.h,
+          start: number < 10
+              ? 14.w
+              : number >= 100
+                  ? 8.w
+                  : 12.w,
+          top: 13.5.h,
           child: Text(
             '$number',
             style: TextStyle(

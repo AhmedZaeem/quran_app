@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           locale: const Locale('ar'),
           home: const SplashScreen(),
           theme: ThemeData(
-            fontFamily: 'HafsSmart',
+            fontFamily: 'quran',
             scaffoldBackgroundColor: const Color(0xffFEFFDD),
             colorScheme: Theme.of(context).colorScheme.copyWith(),
           ),
